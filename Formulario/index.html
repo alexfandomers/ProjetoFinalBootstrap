@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Requisito validação cnpj folha script.js-->
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--GoogleFont-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <div style="background-image: url(./img/wall3.jpg);height: 80vh;" class="col-12 col-md-12  ">
+
+                <!--Navbar-->
+                <nav class="navbar navbar-expand-sm navbar-dark ">
+
+                    <a class="navbar-brand" href=""><img width="80%" class="img-fluid" src="./img/logo (7).png"
+                            alt=""></a>
+
+                    <a class="navbar-brand" href=""></a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Navegação dropdown responsivo-->
+                    <div id="navegacao" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Home/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Quem Somos/index.html">Quem somos</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Serviços</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="../Serviços/index.html">Serviços</a>
+                                    <a class="dropdown-item" href="../Loja/index.html">Marketplace</a>
+
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../Formulario/index.html">Formulário</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="mx-auto">
+                    <h2 style="margin-top: 50px; color:#fff; font-family:'Maven Pro', sans-serif;"
+                        class="text-monospace ml-3 ">Faça um orçamento.</h2>
+                    <p style="color: #8193B2; font-family:'Maven Pro', sans-serif; font-size: 25px;" class="lead ml-3">
+                        Preencha o formulário abaixo.
+                    <p>
+                        <a class="nav-link d-none d-sm-block " href="#form"><button type="button"
+                                class="btn btn-info">Formulário</button></a>
+                </div>
+            </div>
+
+            <div style="margin-left:-5px;" class="col-md-12 mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox=" 0 0 1680 40"
+                    class="position-absolute width-full z-1" style="bottom: -7px; ">
+                    <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+                </svg>
+            </div>
+
+            <!--text form-->
+            <div style="background-color: #fff; margin-top: 50px;" class="col-sm-12 col-md-6 ">
+                <h1 style="margin-top: 50px; color:#496BA8; font-family:'Maven Pro', sans-serif;"
+                    class="text-monospace ">Quer saber mais?</h1>
+                <p class="lead text-muted">Somos especializados em suporte técnico (presencial e remoto) para
+                    residências e pequenas empresas. Somos uma rede de profissionais de TI mais talentosa e confiável
+                    que você já encontrou. Temos orgulho de nossos técnicos locais e da qualidade do serviço que
+                    prestam. Preencha o formulário e entraremos em contato.
+                <p>
+            </div>
+
+            <div id="form"></div>
+            <!--form ancor-->
+            <div style="background-color: #fff; margin-top: 50px;" class="col-sm-12 col-md-6 ">
+                <form>
+
+                    <!-- form -->
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input class="form-control" type="text" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input class="form-control" type="email" id="email" placeholder="Digite seu email">
+                    </div>
+
+                    <!-- select -->
+                    <div class="form-group">
+                        <label for="cnpj">CNPJ</label>
+                        <input class="form-control" type="text" id="cnpj" placeholder="Digite seu CNPJ">
+
+                    </div>
+
+                    <!-- textarea -->
+                    <div class="form-group">
+                        <label>Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="3"></textarea>
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <button class="btn btn-info" type="button" id="botaoValidarCNPJ">Enviar</button>
+
+                    </div>
+                </form>
+            </div>
+
+
+
+            <!--alexa-->
+            <div style="background-color:#343A40 ;" class="col-sm-6 col-md-6  mx-auto ">
+
+                <img class="img img-fluid mt-4 mx-auto w-50" src="./img/kit_seguranca_residencial-removebg-preview.png"
+                    alt="">
+
+
+            </div>
+
+            <div style="background-color:#343A40 ;" class="col-sm-6  col-md-6  mx-auto">
+                <h1 style="margin-top: 50px; color:#fff; font-family:'Maven Pro', sans-serif; " class="text-monospace ">
+                    Sistema de alarmes e câmeras.</h1>
+                <p font-family:'Maven Pro', sans-serif; style="color: #8193B2;" class="lead">Com Acompanhamento através
+                    da internet. Sua Casa Protegida <strong>nosssa satisfação.</strong>
+                <p>
+                    <a class="nav-link mx-auto" href="https://linktr.ee/automatizestore"> <button
+                            style="margin-left: -16px;" type="button" class="btn btn-info">Saiba mais</button></a>
+            </div>
+
+
+
+            <div style="background-color: white;height: 40vh;" class="col-md-12">
+
+            </div>
+
+            <div style="background-color: #343A40;" class="col-12 col-md-12 col-sm-12">
+                <div style="margin-left:-5px;" class="col-12 col-md-12 col-sm-12 mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40"
+                        class="position-absolute  width-full mt-n1 mx-auto d-none d-sm-block"
+                        style="transform: scaleY(-1);bottom: -11px;">
+                        <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+                    </svg>
+
+                </div>
+
+                <!--img base-->
+                <div class="col-sm-12 mx-auto w-50 ">
+                    <img class=" img-fluid " style="position: relative; z-index: 2; margin-top: -260px;"
+                        src="./img/1_fs-8JnSrwCM2embxUiwYMQ-removebg-preview.png" alt="">
+                </div>
+            </div>
+
+            <!--text base-->
+            <div style="background-color: #343A40;" class="col-sm-6 col-md-6  mx-auto  ">
+                <h1 style=" color:#fff; font-family:'Maven Pro', sans-serif;" class="text-monospace ml-5">Automatize
+                    Store</h1>
+                <p style="color: #8193B2; font-family:'Maven Pro', sans-serif;" class="lead ml-5">Conheça nossas
+                    soluções em automação residencial ou
+                    ambiente coorporativo e deixe sua vida ✚ Inteligente!</p>
+
+                <a class="nav-link mx-auto" href="https://linktr.ee/automatizestore"> <button type="button"
+                        class="btn btn-info ml-4 ">Automatize store</button></a>
+
+            </div>
+
+            <div style="background-color: #343A40;" class="col-sm-6 col-md-6  mx-auto">
+
+                <div class="mx-auto" style="width: 200px;">
+                    <img class=" img-fluid" style="position: relative; z-index: 2; " src="./img/robot.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer style="background-color: #2d3135; text-align: center;">
+        <span style="color: #8193B2;">© All Rights Reserved Automatize<br>
+            Prowdly powered by Alex</span>
+         
+        <div id="midias" align="center">
+            <a href="https://www.instagram.com/automatizestore/   "><img width="25px" src="./img/instagram.svg" alt=""></a>
+             <a href=" https://www.instagram.com/automatizestore/  "><img width="25px" src="./img/facebook.svg" alt=""></a>
+        </div>      
+    </footer>
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
